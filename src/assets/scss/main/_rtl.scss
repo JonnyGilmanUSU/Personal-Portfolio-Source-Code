@@ -1,0 +1,193 @@
+.tokyo_tm_all_wrap {
+  .rtl-theme {
+    direction: rtl;
+    .tokyo_tm_progressbox .left {
+      padding-right: 0;
+      padding-left: 50px;
+      @media (max-width: 768px) {
+        padding-left: 0;
+      }
+    }
+    .tokyo_tm_info ul li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .tokyo_tm_short_info .left {
+      padding-right: 0;
+      padding-left: 50px;
+    }
+    .tokyo_tm_info ul li span:first-child {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+    .tokyo_tm_skillbox .left {
+      padding-right: 0;
+      padding-left: 50px;
+    }
+
+    .tokyo_tm_skill_list ul li {
+      padding-left: 0;
+      padding-right: 25px;
+    }
+    .tokyo_tm_skill_list ul li .svg {
+      left: auto;
+      right: 0;
+      transform: rotate(-180deg);
+    }
+    .tokyo_tm_resume_list ul li {
+      float: right;
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    .tokyo_tm_resume_list ul:before {
+      left: auto;
+      right: 0;
+    }
+    .tokyo_tm_resume_list ul li:before {
+      left: auto;
+      right: -9px;
+    }
+    .tokyo_tm_testimonials .details {
+      direction: rtl;
+    }
+    .tokyo_tm_testimonials .details .info {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    .tokyo_tm_testimonials .list ul li .text:before {
+      left: auto;
+      right: 50px;
+    }
+
+    @media (max-width: 767px) {
+      .tokyo_tm_resume_list ul li .place {
+        padding-left: 0;
+        padding-right: 20px;
+      }
+      .tokyo_tm_resume_list ul li .time {
+        padding-right: 0;
+        padding-left: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1601px) {
+      .tokyo_tm_all_wrap .rightpart {
+        padding-left: 0;
+        padding-right: 450px;
+      }
+    }
+    @media (max-width: 1600px) {
+      .tokyo_tm_section {
+        padding-left: 0;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .leftpart_inner .menu ul li:not(:last-child) {
+        margin-right: 0;
+        margin-left: 15px;
+      }
+      .theme-switcher-label {
+        right: auto;
+        left: 15px;
+      }
+    }
+
+    .leftpart {
+      right: 0;
+      left: auto;
+      .menu ul li {
+        font-weight: 600;
+      }
+    }
+    .rightpart {
+      padding-left: 0;
+      padding-right: 400px;
+      @media (max-width: 1200px) {
+        padding-right: 0;
+      }
+    }
+    .tokyo_tm_home .details {
+      margin-left: 0;
+      margin-right: 80px;
+      @media (max-width: 1040px) {
+        margin-right: 0;
+      }
+    }
+    .tokyo_tm_about .description .left {
+      padding-right: 0;
+      padding-left: 50px;
+    }
+    ul.react-tabs__tab-list {
+      left: 0;
+      right: auto;
+    }
+    .tokyo_tm_portfolio .portfolio_filter .react-tabs__tab-list li:first-child {
+      margin-right: 0px;
+    }
+    .social li {
+      margin: 0 0 0 15px;
+    }
+    .tokyo_tm_portfolio .portfolio_filter .react-tabs__tab-list li:last-child {
+      margin-right: 25px;
+    }
+    .tokyo_tm_portfolio .portfolio_filter .react-tabs__tab-list li {
+      font-weight: 600;
+    }
+    .tokyo_tm_news ul li .details .date span:before {
+      left: 100%;
+      right: auto;
+    }
+    .tokyo_tm_news ul li .details .date span {
+      margin-left: 0;
+      margin-right: 11px;
+      padding-right: 11px;
+    }
+    .tokyo_tm_read_more a:before {
+      transform: scaleX(1);
+    }
+    .leftpart .menu ul li .svg {
+      margin-right: 0;
+      margin-left: 10px;
+      @media (max-width: 1200px) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.rtl-p {
+  direction: rtl;
+  &.tokyo_tm_modalbox_news .date span {
+    margin-left: 0;
+    margin-right: 11px;
+    padding-right: 11px;
+    &::before {
+      left: 100%;
+      right: auto;
+    }
+  }
+}
+
+.portfolio_tm_modalbox .rtl-p .main_details {
+  .textbox {
+    padding-right: 0;
+    padding-left: 40px;
+  }
+  .social li {
+    margin: 0px 0 0px 15px;
+  }
+}
+.text-rtl {
+  direction: rtl;
+  &.tokyo_tm_modalbox_about .my_box .left {
+    padding-right: 0;
+    padding-left: 50px;
+  }
+  .progress_inner > span {
+    text-align: right;
+  }
+  .progress_inner span.number {
+    float: left;
+  }
+}
