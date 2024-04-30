@@ -7,26 +7,17 @@ const PersonalInfo = () => {
       colClass: "left",
       info: [
         {
-          id: 1,
-          name: "Birthday",
-          content: "02.28.2001",
-        },
-        {
           id: 2,
           name: "Age",
-          content: "22",
+          content: "23",
         },
-        {
-          id: 3,
-          name: "Address",
-          content: "100 N 2050 E Logan Utah, USA",
-        },
+
         {
           id: 4,
           name: "Email",
           content: (
             <>
-              <a href="mailto:jonnygilman@icloud.com">jonnygilman@icloud.com</a>
+              <a href="mailto:jonnygilman@icloud.com">jonnygilm@gmail.com</a>
             </>
           ),
         },

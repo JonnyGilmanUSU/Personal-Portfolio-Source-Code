@@ -10,9 +10,9 @@ const KnowledgeInterest = () => {
        "React",
        "Javascript, HTML5, CSS3",
        "Node.js, Python",
-       "MySQL",
+       "MySQL, MongoDb",
        "Rest API, JSON",
-       "AWS, Google Cloud",
+       "AWS",
       ],
     },
     {

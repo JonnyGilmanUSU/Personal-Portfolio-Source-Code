@@ -1,7 +1,7 @@
 import React from "react";
 import Social from "./Social";
-
-const Home = () => {
+import { Tab } from "react-tabs";
+const Home = ({ onNavigateToPortfolio }) => {
   return (
     <>
       <div className="tokyo_tm_home">
@@ -10,9 +10,10 @@ const Home = () => {
             <div
               className="image avatar_img"
               style={{
-                backgroundImage: "url(assets/img/slider/hero.jpg)",
+                backgroundImage: "url(public/assets/img/1.jpg)",
               }}
-            ></div>
+            >
+          </div>
             {/* END AVATAR IMAGE */}
           </div>
           {/* END AVATAR */}
@@ -21,8 +22,17 @@ const Home = () => {
             <p className="job">
               Software Developer studying at Utah State University who loves learning and spending time in the outdoors.
             </p>
+            <div className="tokyo_tm_button" style={{marginBottom: '30px'}}>
+              <button 
+                type="button" 
+                className="ib-button no-margin"
+                onClick={onNavigateToPortfolio} 
+                >
+                View Projects
+              </button>
+            </div>
             {/* END JOB */}
-            <Social />
+            <Social/>
           </div>
           {/* END DETAILS */}
         </div>

@@ -99,6 +99,26 @@ const Services = () => {
         "Client Side Web App Dev",
       ],
     },
+    {
+      "id": 8,
+      "no": "08",
+      "title": "MongoDB / MySQL",
+      "text": "Proficient in both MongoDB and MySQL, I possess strong database management skills. MongoDB expertise enables me to work with NoSQL databases efficiently, ensuring scalability and flexibility in data handling. Likewise, my proficiency in MySQL allows me to design relational databases, ensuring data integrity and efficient querying. With these skills, I can effectively manage diverse data requirements across various projects.",
+      "collegeCourses": [
+        "Database Management Systems",
+        "Data Structures and Algorithms"
+      ]
+    },
+    {
+      "id": 9,
+      "no": "09",
+      "title": "Node.js",
+      "text": "As a Node.js developer, I leverage the power of JavaScript to build scalable, high-performance web applications. My expertise in Node.js allows me to create server-side applications with ease, handling concurrent connections efficiently. With knowledge of frameworks like Express.js, I streamline development processes, ensuring robustness and maintainability in my code. Additionally, I proficiently work with npm packages to extend functionality and expedite development workflows.",
+      "collegeCourses": [
+        "Server-side Development with Node.js",
+        "Advanced JavaScript"
+      ]
+    }      
   ];
 
   return (

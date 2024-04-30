@@ -457,6 +457,8 @@ h6 {
   box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   overflow: hidden;
+  background-image: url(../../1.jpg) !important;
+
 }
 
 @keyframes morph {
@@ -617,6 +619,7 @@ h6 {
 .ib-button:hover {
   letter-spacing: 2px;
 }
+
 
 .tokyo_tm_modalbox_about .close .svg {
   width: 50px;

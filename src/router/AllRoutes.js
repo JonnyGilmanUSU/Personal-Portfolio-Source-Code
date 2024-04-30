@@ -11,8 +11,8 @@ const AllRoutes = () => {
   return (
     <>
       <Routes>
-        <Route index={true} element={ <Authentification/> } />
-        <Route path="/home" element={<HomeLight />} />
+        {/* <Route index={true} element={ <Authentification/> } /> */}
+        <Route path="/" element={<HomeLight />} />
         <Route path="/home-light" element={<HomeLight />} />
         {/* <Route path="/rtl-home-light" element={<RtlHomeLight />} /> */}
         <Route path="*" element={<NotFound />} />

@@ -6,10 +6,10 @@ const SocialShare = [
     link: "https://www.linkedin.com/in/jonnygilman",
   },
   { iconName: "github-dark", link: "https://github.com/JonnyGilmanUSU" },
-  {
-    iconName: "instagram",
-    link: "https://www.instagram.com/jonny.gilman/",
-  },
+  // {
+  //   iconName: "instagram",
+  //   link: "https://www.instagram.com/jonny.gilman/",
+  // },
 
 ];
 const Social = () => {

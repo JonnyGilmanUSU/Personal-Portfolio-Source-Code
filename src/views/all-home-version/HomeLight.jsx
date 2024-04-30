@@ -13,6 +13,7 @@ import PageTitle from "../../components/PageTitle";
 
 const HomeLight = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
+  const [tabIndex, setTabIndex] = useState(0);
 
   useEffect(() => {
     document.body.classList.toggle("dark", isDarkMode);
@@ -23,9 +24,18 @@ const HomeLight = () => {
     setIsDarkMode(!isDarkMode);
   };
 
+  const handleTabSelect = (index) => {
+    setTabIndex(index);
+  };
+
+  const goToPortfolio = () => {
+    setTabIndex(3);  // Assuming the Portfolio tab is the fourth tab
+  };
+
+
   return (
     <>
-      <PageTitle title="Home Regular" />
+      <PageTitle title="Jonny Gilman" />
       {/* End page title for seo */}
 
       <button className="theme-switcher-label" onClick={toggleDarkMode}>
@@ -40,9 +50,9 @@ const HomeLight = () => {
         )}
       </button>
 
-      <Tabs>
-        <TabList>
-          {/* START LEFT MENU CONTENT */}
+      <Tabs selectedIndex={tabIndex} onSelect={handleTabSelect}>
+      <TabList>
+          {/* Left menu content */}
           <div className="leftpart">
             <div className="leftpart_inner">
               <div className="logo">
@@ -50,68 +60,40 @@ const HomeLight = () => {
                   <img src="/assets/img/logo/logo.png" alt="brand" />
                 </Link>
               </div>
-              {/* END LOGO */}
-
               <div className="menu">
                 <ul>
+                  {/* Home */}
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/home-run.svg"
-                      alt="homerun"
-                    />
+                    <img className="svg" src="/assets/img/svg/home-run.svg" alt="home" />
                     <span className="menu_content">Home</span>
                   </Tab>
+                  {/* About */}
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/avatar.svg"
-                      alt="avatar"
-                    />
+                    <img className="svg" src="/assets/img/svg/avatar.svg" alt="avatar" />
                     <span className="menu_content">About</span>
                   </Tab>
+                  {/* Skills */}
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/setting.svg"
-                      alt="avatar"
-                    />
+                    <img className="svg" src="/assets/img/svg/setting.svg" alt="settings" />
                     <span className="menu_content">Skills</span>
                   </Tab>
+                  {/* Portfolio */}
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/briefcase.svg"
-                      alt="briefcase"
-                    />
+                    <img className="svg" src="/assets/img/svg/briefcase.svg" alt="briefcase" />
                     <span className="menu_content">Portfolio</span>
                   </Tab>
-                  {/* <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/paper.svg"
-                      alt="paper"
-                    />
-                    <span className="menu_content">News</span>
-                  </Tab> */}
+                  {/* Contact */}
                   <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/mail.svg"
-                      alt="mail"
-                    />
-                    <span className="menu_content"> Contact</span>
+                    <img className="svg" src="/assets/img/svg/mail.svg" alt="mail" />
+                    <span className="menu_content">Contact</span>
                   </Tab>
                 </ul>
               </div>
-              {/* END MENU */}
-
               <CopyRight />
-              {/* END COPYRIGHT */}
             </div>
           </div>
-          {/* END LEFT MENU CONTENT */}
-        </TabList>
+      </TabList>
+
         {/* END SIDEBAR TABLIST */}
 
         {/* START RIGHT PART CONTENT */}
@@ -120,7 +102,7 @@ const HomeLight = () => {
             <div className="tokyo_tm_section">
               <TabPanel>
                 <div data-aos="fade-right" data-aos-duration="1200">
-                  <Home />
+                  <Home onNavigateToPortfolio={goToPortfolio}/>
                 </div>
               </TabPanel>
               {/* END HOME MENU TAB CONTENT */}

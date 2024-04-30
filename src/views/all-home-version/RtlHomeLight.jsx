@@ -24,7 +24,7 @@ const HomeLight = () => {
   };
   return (
     <div className="rtl-theme">
-      <PageTitle title="Home RTL" />
+      <PageTitle title="Jonny Gilman" />
       {/* End page title for seo */}
 
       {/* Start Dark & Light Mode Swicher  */}
