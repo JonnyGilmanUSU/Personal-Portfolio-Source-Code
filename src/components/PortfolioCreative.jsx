@@ -7,11 +7,62 @@ Modal.setAppElement("#root");
 const portfolioData = [
   {
     id: 1,
-    title: "Tune Match (Full Stack Web Application)",
+    title: "R3 Roofing",
+    portfolioThumbnail: "assets/img/portfolio/r3.png",
+    modalThumbnail: "assets/img/portfolio/r3.png",
+    portflioExampleLink: "https://testdomain827.com/",
+    gitHubLink: "Source Code Unavailable",
+    overview: "Created a new brand new polished website for a local roofing company. Content was taken from the old website which was very outdated.",
+    projectOverview:  [
+      {
+        section: "WordPress Customization",
+        content: "Developed a fully customized WordPress site for a roofing company, enhancing user interface and functionality. Utilized advanced features of WordPress to overhaul an outdated site, integrating new, optimized content and modern design elements that resonate with the target audience."
+      },
+      {
+        section: "Design and Elementor Integration",
+        content: "Leveraged Elementor to create visually appealing and responsive layouts. Employed custom CSS for fine-tuning the design, ensuring that the website not only looks professional but also stands out in a competitive market. The new design improved navigation and overall user engagement."
+      },
+      {
+        section: "SEO and Content Strategy",
+        content: "Implemented a comprehensive SEO strategy to increase visibility and organic search rankings. Updated website content to include targeted keywords, optimized meta descriptions, and alt tags. This strategic content revamp led to improved search engine performance and user retention, attracting more potential clients to the website."
+      }
+    ]
+  },
+  
+  {
+    id: 2,
+    title: "Sadie and Jonny's Adventure Blog",
+    portfolioThumbnail: "assets/img/portfolio/adventureBlog.png",
+    modalThumbnail: "assets/img/portfolio/adventureBlog.png",
+    gitHubLink: "https://github.com/JonnyGilmanUSU/Adventure_Blog_Full_Stack",
+    portflioExampleLink: "https://adventureblog-nsny.onrender.com/",
+    overview: "I love adventuring in the outdoors with my wife. This full-stack web application serves as a personal and interactive blog to document and share the outdoor adventures my wife and I enjoy. As an enthusiast of both technology and nature, I saw a perfect opportunity to blend these passions. The website is built using React, Node.js, and MongoDB, showcasing a dynamic and responsive design. Users can navigate through various posts detailing our hiking, canyoneering, and climbing expeditions. The project was a great way to test and enhance my full-stack development skills, managing everything from user authentication and data storage to creating a visually appealing and user-friendly interface.",    gitHubLink: "https://github.com/JonnyGilmanUSU/Adventure_Blog_Full_Stack",
+    projectOverview: [
+      {
+        "section": "React Dynamic User Interface",
+        "content": "Built an engaging and responsive user interface with React, handling state management to ensure real-time updates and interactive user experiences. For example, dynamic rendering of blog posts as they are added or updated."
+      },
+      {
+          "section": "Node.js Backend Integration",
+          "content": "Developed a robust backend using Node.js to handle data management and server-side logic, including APIs for blog post retrieval and management. Integrated MongoDB for storing and querying data efficiently."
+      },
+      {
+          "section": "MongoDB Database Design",
+          "content": "Utilized MongoDB for flexible data storage of our blog posts, enabling complex queries and scalable growth. Implemented best practices in database schema design to optimize performance and data retrieval."
+      },
+      {
+        "section": "Data Management and React Routing",
+        "content": "Implemented React Context for global state management, fetching data from the backend and making it available across the application. Utilized React Router for seamless navigation and dynamic content loading, enhancing the user experience by maintaining state without reloading the page."
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Tune Match (Full Stack Web Application) See Login Credentials in Overview!",
     portfolioThumbnail: "assets/img/portfolio/TuneMatch.png",
     modalThumbnail: "assets/img/portfolio/TuneMatch.png",
     portflioExampleLink: "https://tunematchproject.onrender.com/",
-    overview: "I am a big music nerd and thought it would be a fun idea to create an application that could help me and others find new music! Over the past few weeks I have developed a dynamic, data-driven web application leveraging Node.js and Express for backend operations and React for the frontend. The frontend was meticulously crafted using React, providing a seamless user experience with interactive components and real-time updates. Leveraged Node.js and Express to build a robust backend, handling authentication, data retrieval, and business logic. Additionally, all designs were drafted in figma, and then brought to life using vanilla CSS, showcasing expertise in UI/UX design principles and delivering a visually appealing interface. Overall I am very proud of the designing and funcionality of the application. It was fun to think of an idea, and bring it to life using all the tools I have learned in the past few years.",
+    overview: "LOGIN CREDENTIALS: EMAIL: tunematchguest@gmail.com PASSWORD: Tunematchtest01! Because spotify API allows limited users. Use these credentials to log in and test the application. I am a big music nerd and thought it would be a fun idea to create an application that could help me and others find new music! Over the past few weeks I have developed a dynamic, data-driven web application leveraging Node.js and Express for backend operations and React for the frontend. The frontend was meticulously crafted using React, providing a seamless user experience with interactive components and real-time updates. Leveraged Node.js and Express to build a robust backend, handling authentication, data retrieval, and business logic. Additionally, all designs were drafted in figma, and then brought to life using vanilla CSS, showcasing expertise in UI/UX design principles and delivering a visually appealing interface. Overall I am very proud of the designing and funcionality of the application. It was fun to think of an idea, and bring it to life using all the tools I have learned in the past few years. If you open your spotify application and log into the tunematchguest account the song reccomended will start playing on the app. You can also click the like button to add it to liked songs. ",
     gitHubLink: "https://github.com/JonnyGilmanUSU/TuneMatchProject",
     projectOverview:  [
       {
@@ -41,7 +92,7 @@ const portfolioData = [
     ]
   },
   {
-    id: 2,
+    id: 4,
     title: "Multi Shop Eccomerce (React App)",
     portfolioThumbnail: "assets/img/portfolio/multiShop1.png",
     modalThumbnail: "assets/img/portfolio/multiShop1.png",
@@ -98,7 +149,7 @@ const portfolioData = [
     ]
   },
   {
-    id: 3,
+    id: 5,
     title: "Mustacchio (Node Js Application)",
     portfolioThumbnail: "assets/img/portfolio/mustache.png",
     modalThumbnail: "assets/img/portfolio/mustache.png",
